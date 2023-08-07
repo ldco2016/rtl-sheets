@@ -1,0 +1,14 @@
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+  
+/* Apply styles to table cells */
+.custom-table th,
+.custom-table td {
+  border: 1px solid white; /* White table lines */
+  padding: 8px;
+  text-align: left;
+  background-color: black; /* Black cell background */
+  color: white; /* White text color */
+}
