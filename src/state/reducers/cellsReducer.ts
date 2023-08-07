@@ -2,7 +2,6 @@ import produce from "immer";
 import { ActionType } from "../action-types";
 import { Action } from "../actions";
 import { Cell } from "../cell";
-import { act } from "react-dom/test-utils";
 
 interface CellsState {
   loading: boolean;
