@@ -17,7 +17,7 @@ store.dispatch({
   type: ActionType.INSERT_CELL_AFTER,
   payload: {
     id: null,
-    type: "text",
+    type: "code",
   },
 });
 
