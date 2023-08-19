@@ -11,10 +11,14 @@ export const unpkgPathPlugin = () => {
 
       // handle relative paths in a module
       build.onResolve({ filter: /^\.+\// }, (args: any) => {
+        const path = new URL(
+          args.path,
+          "https://unpkg.com" + args.resolveDir + "/"
+        ).href.replace(/\/$/, "");
+
         return {
           namespace: "a",
-          path: new URL(args.path, "https://unpkg.com" + args.resolveDir + "/")
-            .href,
+          path,
         };
       });
 

@@ -21,6 +21,7 @@ const bundle = async (rawCode: string) => {
         "process.env.NODE_ENV": '"development"',
         global: "window",
       },
+      logLevel: "error",
     });
 
     return {

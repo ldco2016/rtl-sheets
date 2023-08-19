@@ -20,7 +20,8 @@ const initialState: CellsState = {
 };
 
 const initialCodeSnippets = [
-  `import React, { useState } from 'react';
+ `
+import React, { useState } from 'react';
   import { render, screen } from '@testing-library/react';
   import user from '@testing-library/user-event';
   
@@ -42,7 +43,7 @@ const initialCodeSnippets = [
     const input = screen.queryByRole('textbox');
 
     expect(input).not.toBeInTheDocument();
-  });`
+  });`,
   // Add more initial snippets as needed
 ];
 
