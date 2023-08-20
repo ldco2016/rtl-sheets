@@ -2,6 +2,7 @@
   line-height: unset;
   font-size: unset;
   font-weight: unset;
+  color: #d4d4d4 !important;
 }
 
 .w-md-editor ul {
@@ -27,7 +28,7 @@
   font-style: italic;
 }
  
-.text-editor .w-md-markdown hr {
+.text-editor .wmde-markdown hr {
   border-top: 1px solid #dee5ed;
 }
  
@@ -64,6 +65,10 @@
  
 .text-editor .token.list.punctuation {
   background-color: unset;
+}
+
+.text-editor .wmde-markdown > table tr {
+  background-color: #333333;
 }
 
 

@@ -19,6 +19,33 @@ const initialState: CellsState = {
   data: {},
 };
 
+const initialCodeSnippets = [
+  `import React, { useState } from 'react';
+  import { render, screen } from '@testing-library/react';
+  import user from '@testing-library/user-event';
+  
+  const Counter = () => {
+    const [count, setCount] = useState(0);
+    return <button onClick={() => setCount((c) => c + 1)}>Count: {count}</button>
+  };
+  render(<Counter />);`,
+  `test('it shows a button', () => {
+    render(<Counter />);
+
+    const button = screen.getByRole('button');
+    
+    expect(button).toBeInTheDocument();
+  });`,
+  `test('it doesnt show an input', () => {
+    render(<Counter />);
+
+    const input = screen.queryByRole('textbox');
+
+    expect(input).not.toBeInTheDocument();
+  });`,
+  // Add more initial snippets as needed
+];
+
 const reducer = produce((state: CellsState = initialState, action: Action) => {
   switch (action.type) {
     case ActionType.UPDATE_CELL:
@@ -46,9 +73,10 @@ const reducer = produce((state: CellsState = initialState, action: Action) => {
       return state;
     case ActionType.INSERT_CELL_AFTER:
       const cell: Cell = {
-        content: "",
+        content: initialCodeSnippets[action.payload.orderIndex],
         type: action.payload.type,
         id: randomId(),
+        orderIndex: action.payload.orderIndex,
       };
 
       state.data[cell.id] = cell;

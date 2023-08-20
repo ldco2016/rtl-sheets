@@ -18,6 +18,7 @@ export interface DeleteCellAction {
 export interface InsertCellAfterAction {
   type: ActionType.INSERT_CELL_AFTER;
   payload: {
+    orderIndex: any;
     id: string | null;
     type: CellTypes;
   };

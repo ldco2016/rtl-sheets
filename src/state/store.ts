@@ -10,6 +10,7 @@ store.dispatch({
   payload: {
     id: null,
     type: "code",
+    orderIndex: 2,
   },
 });
 
@@ -18,6 +19,7 @@ store.dispatch({
   payload: {
     id: null,
     type: "code",
+    orderIndex: 1,
   },
 });
 
@@ -26,6 +28,7 @@ store.dispatch({
   payload: {
     id: null,
     type: "code",
+    orderIndex: 0,
   },
 });
 
@@ -34,5 +37,6 @@ store.dispatch({
   payload: {
     id: null,
     type: "text",
+    orderIndex: null,
   },
 });
