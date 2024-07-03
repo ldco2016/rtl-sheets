@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# RTL-Sheets CLI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RTL-Sheets is a CLI tool designed to launch an interactive development environment for writing and documenting code. This tool is intended to streamline your coding workflow by providing a user-friendly interface for development and documentation.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Interactive Development Environment:** Launches an environment where you can write, test, and document your code interactively.
+- **Code Documentation:** Automatically generates and updates documentation as you code.
+- **User-Friendly Interface:** Simplifies the development process with an intuitive interface.
+- **Real-Time Preview:** See changes in real-time as you code and document.
+- **Customizable:** Tailor the environment to fit your specific needs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine. If you don't have them installed, you can download and install Node.js which includes npm.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install RTL-Sheets CLI globally on your machine, run the following command:
 
-### `npm run build`
+```bash
+npm install -g rtl-sheets
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To launch the interactive development environment, navigate to your project directory in your terminal and run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npx rtl-sheets serve roles-notes.js
+```
 
-### `npm run eject`
+## Commands
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `npx rtl-sheets serve`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Starts the RTL-Sheets interactive development environment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We welcome contributions to improve RTL-Sheets! To contribute, please follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Please ensure all pull requests are well-documented and include any necessary tests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+RTL-Sheets is licensed under the MIT License.
